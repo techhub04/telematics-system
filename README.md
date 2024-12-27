@@ -9,3 +9,7 @@ git config --global user.email "your.email@example.com"
 
 ##Verify Configuration: Check if the values were set correctly:
 git config --global --list
+
+
+##Devops Org
+https://dev.azure.com/TSOrg/TSystems
