@@ -1,0 +1,7 @@
+services:  # define all the services
+    user-service: 
+      build: 
+        context: ./src/services/user-service
+        dockerfile: docker
+      ports:
+        - "5000:5000" # Map container port 3001 to host port 3001

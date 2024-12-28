@@ -3,20 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "userService",
+    "microservice2",
+    "shared"
+  ],
   "scripts": {
     "start": "concurrently \"npm run dev:userService\"",
-    "dev:userService": "nodemon src/services/user-service/server.js"
+    "dev:userService": "nodemon src/services/user-service/server.js",
+    "build:userService": "esbuild src/services/user-service/server.js --bundle --outfile=dist/app.js --minify --platform=node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {    
+  "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongoose": "^8.9.2",
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "esbuild": "^0.24.2"
   }
 }

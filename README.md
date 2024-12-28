@@ -11,5 +11,17 @@ git config --global user.email "your.email@example.com"
 git config --global --list
 
 
-##Devops Org
+## Devops Org
 https://dev.azure.com/TSOrg/TSystems
+
+## esbuild for bundeling and minified 
+npm install --save-dev esbuild
+
+## build the docker images
+docker-compose build
+
+## start the container
+docker-compose up -d
+
+## list the images
+docker ps
