@@ -5,8 +5,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  appName: ''  #App Name is Azure 
-  azureSubscription: ''
+  appName: 'ts-system-api'  #App Name is Azure 
+  azureSubscription: '2b90b9cd-d4b4-486d-a193-5ebee386d284'
   packageDir: '.'
 
 stages:
