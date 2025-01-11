@@ -25,3 +25,17 @@ docker-compose up -d
 
 ## list the images
 docker ps
+
+## set .env 
+
+## Rabbit MQ setup
+1. donwload RabbitMQ from official website
+2. Install amqplib for RabbitMQ interaction:
+3. Install rascal for robust library for managing RabbitMQ interactions
+4. npm install amqplib
+Run the following command to enable the rabbitmq_management plugin:
+rabbitmq-plugins enable rabbitmq_management
+
+Rascal is a robust library for managing RabbitMQ interactions in Node.js. 
+It simplifies working with RabbitMQ by providing features like error handling, retries, dead-letter queues, 
+and more, while abstracting many low-level details.

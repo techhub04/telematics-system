@@ -4,7 +4,7 @@ const TSError = require('../../../common/logging/ts-error');
 const connectDB = async () => {
   try {
     //const uri = 'mongodb://host.docker.internal:27017/telematics-user-db?retryWrites=true&w=majority';//process.env.MONGO_URI;
-    const uri = 'mongodb://localhost1:27017/telematics-user-db?retryWrites=true&w=majority';//process.env.MONGO_URI;
+    const uri = 'mongodb://localhost:27017/telematics-user-db?retryWrites=true&w=majority';//process.env.MONGO_URI;
    
     if (!uri) {
       throw new TSError("MONGO_URI is not defined in environment");

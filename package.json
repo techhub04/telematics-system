@@ -17,10 +17,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "amqplib": "^0.10.5",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongoose": "^8.9.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "rascal": "^20.1.1"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
