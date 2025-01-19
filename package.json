@@ -11,18 +11,22 @@
   "scripts": {
     "start": "concurrently \"npm run dev:userService\"",
     "dev:userService": "nodemon src/services/user-service/server.js",
-    "build:userService": "esbuild src/services/user-service/server.js --bundle --outfile=dist/app.js --minify --platform=node"
+    "build:userService": "esbuild src/services/user-service/server.js --bundle --outfile=dist/server.js --minify --platform=node",
+    "dev:vmService": "nodemon src/services/vehicle-management-service/server.js",
+    "build:smService": "esbuild src/services/vehicle-management-service/server.js --bundle --outfile=dist/server.js --minify --platform=node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "amqplib": "^0.10.5",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongoose": "^8.9.2",
-    "nodemon": "^3.1.9"
+    "rascal": "^20.1.1"
   },
   "devDependencies": {
+    "nodemon": "^3.1.9",
     "concurrently": "^9.1.0",
     "esbuild": "^0.24.2"
   }

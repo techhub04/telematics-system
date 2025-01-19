@@ -21,7 +21,7 @@ stages:
         inputs: 
           versionSpec: 'v20.14.0'
 
-      - script: |
+      - script: 
          npm install
          npm run build
         displayName: 'Install Dependencies and Build'
