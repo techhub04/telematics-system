@@ -1,0 +1,22 @@
+# use official Node.JS LTS Image
+FROM node:18
+
+# set the working directory
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install the dependencies specified in package.json.
+RUN npm install
+
+# copy application code
+COPY . .
+
+# The EXPOSE instruction informs Docker about the network port the container listens to at runtime.
+EXPOSE 5000
+
+# start NodeJS app
+CMD ["node", "server.js"]
+
+

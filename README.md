@@ -39,3 +39,9 @@ rabbitmq-plugins enable rabbitmq_management
 Rascal is a robust library for managing RabbitMQ interactions in Node.js. 
 It simplifies working with RabbitMQ by providing features like error handling, retries, dead-letter queues, 
 and more, while abstracting many low-level details.
+
+## MS SQL SAETUP WITH PRISIMA ORM --https://chatgpt.com/c/678200ab-057c-8011-8c80-4bbd40f03ae8
+npm install prisma --save-dev
+npx prisma init
+
+## Install Prisma Client and MS SQL Connector: 
